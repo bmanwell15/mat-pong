@@ -1,0 +1,89 @@
+body {
+  background-color: #000;
+  color: #fff;
+  background-image: url(https://cdn.glitch.global/106b2155-9476-4450-9a3d-e6ff72fe6fc7/f35f3356-659f-41b5-bc7b-07e6fda8ab42.image.png?v=1642091588533);
+  background-repeat: no-repeat;
+/*   background-size: 1366px 760px; */
+  overflow: hidden;
+  font-family: arial;
+}
+
+#paddle {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(11,176,230,1), rgba(11,176,230,1), rgba(0,0,0,0));
+  border-radius: 5px;
+  position: fixed;
+}
+
+#paddle2 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), limegreen, limegreen, rgba(0,0,0,0));
+  border-radius: 5px;
+  position: fixed;
+}
+
+#phantomPaddle {position:fixed}
+
+#ball{
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(circle, white, #777);
+  position: fixed;
+  border-radius: 50%;
+}
+
+#score1, #score2 {
+  font-family: arial;
+  color: #333;
+  font-size: 30em;
+  margin:0;
+  flex:50%;
+  text-align:center;
+  z-index: -1;
+}
+
+#winner {
+  position: fixed;
+  bottom: 6vw;
+  left: 30vw;
+  width: 20vw;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: none;
+  opacity: 0;
+}
+
+#restartBtn {
+  width: 20vw;
+  position: fixed;
+  bottom: 6vw;
+  left: 30vw;
+  border-image: linear-gradient(to right, rgba(11,176,230,1), limegreen) 1;
+  border-width: 4px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  display: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#instructions, #instructions2 {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #888;
+  top: 20%;
+  font-size: 60px;
+  z-index: -1;
+}
+
+#instructions2 {
+  display: static;
+  top: 75%;
+  font-size: 45px;
+}

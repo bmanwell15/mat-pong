@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pong</title>
+    
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAFKElEQVR4Xs2Yy2ujVRjGq+ANFEUERTe60oXiwstqliIIIup/oSC4EhHciBdGHcE/QDcio+PsRtCdW8ViB3tLm97SNm16v6VNm7Q5Pr+PPOHkTOjENsnMCweS7zvnfZ7veS/f+c7AwBkshHDHyMjIy+Pj4x9qXM3lcv9OTEwsaQSNPY385OTkH7r+w9jY2Aea+1Lqoyc2Ojr6mAA/FXBBBMLU1FSYnp4OMzMzYXZ29obBde4zT6TntO6T4eHhR1O/57ahoaGHpNS3Aqnk8/kMdG5uLhQKhbCwsBAWFxdDsVi8YXCd+8xjPuu0viI/3+j3gynOmUyKvSmHJYihiElBYHl5OZRKpbCyshJWV1fD2tpac/Cf69xnHvNNFj/yV5Kib6R4HZvy7E6F9BKhtGIALC0tZaAQWF9fD5ubm2Fraytsb2+HnZ2d5uA/17nPPOazjvX4iRT9GqwU/1QTsbsV0l+s2vz8fKYAAKizsbGREdjd3Q17e3thf38/GwcHB83ha9xnHvNZx3r84A+/DTWvgJnyaGs8jchdgRyJbtVQwMRMqlKphKOjo1CtVkOtVgvHx8fNwX+uc595Jmui+LOa4Ajv546UFLmvYnLkD09NqFACoMPDwwz85OQk1Ov1cJpxn3nMZx3r8YM//OLfJFXtF1M+LaYW8Lpyro7sMTlyiadHCRM7i5koKYA//MYkhVtXQb6W8spMFfWAbhZJXHKjHTnC1g3DD/5SkuAKf1H5eH/Kj3byJQ2VNkACkyMxOfKqm4a/mCR44IKvFPuihZyUe0SjTGhprvQvEplc6aZyqVlJcMADF3zxKEvFh5sEpd7HVo/KQnJ6GQlNzvTS8A8O1Q0u+A0VP2oSVGFMxupRYUhP1Z21IDo1/IMDHriRirmMnHYaz9NW6OzkAE/B01BpvQptauDEKsIDPorqs4T3fcLrynXu9UM9m1V0Lrqixes9GvNl9z2Ht1wuZ2+Afhp44DrMjeb9IxX8D13crQWZkbtf4bXFYXbLUZj/pkBW4/yjesm/bve9mxl44IIf5eEKBCsQpLzZFjGB3tSv/LOBBy748ICPeB0MqIJrtzHBKgpu3sYEN7ImnebgrSYY5eAEVfxrWsW3okioYnCTKr4Gwc/j1xw7i368g1PzOxn86HX3GY36Ve8B+Vagk/NepHHebLfcLQMHPHDBh0djb/jKgDr2farkHe9kXCj9DHPcA10g4rOj1Ls32zBoN/09eRiH2a+7Xqto9cCLwys+3zW3WyL4YrzVj1Xs9SvPxWH1GhuFujYKLzQJYuo2v7ua+7UnbLcXBF88fmshh6lYnpOKNVT0rtobB0LQbZL4w2+b3XQ12we2M6l40VsvKsmh7jbJmJxDC15ji9X6wRTb4ODgXarov3izxB9PJkk4zlvZrPcHPH7jjyXh/gmHlFeLqXE/IYkL/vw0ScJApfE64ukB6rTCmcd8H4Pgx0cgzjvhcX74eMqnrYnkMyJZhCRP5nDTBnz8YaI+kyFsEPHgv89o4vMZ1uPHYcW/cIpKradTHqeanuYpkcwRbh+D+ADJRFHCZAlbOkyKeYSTdT448nGH/OeUd0+m+B0ZxyHKyZ9oP/ERXHw2SKgAh7CP4/yb69xPzwjxgz/5vQxGivu/TdX9tlrQPGqaKAqQPz5ZhQDqePCf6z5p9Skr6+WnoOi8leKcy6TkPRrviugUROOjYPoXAxIevsZ95jXOqfNa/w6+Uv9dNRXRBQFd0rhO+E04HVzX/euNuRdSP53YfwokswF2cR2KAAAAAElFTkSuQmCC">
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://releases.jquery.com/git/ui/jquery-ui-git.js"></script>
+    <script src="./circumvent.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="paddle"></div>
+    <div id="paddle2"></div>
+    <div id="phantomPaddle"></div>
+    <div id="ball"></div>
+    
+    <div style="display:flex">
+      <p id="score1">0</p>
+      <p id="score2">0</p>
+    </div>
+    
+    
+    
+    <div id="instructions">
+      <p style="flex:50%">Press <b>W</b> and <b>S</b><br> to move</p>
+      <p style="flex:50%">Press <b>&#8593;</b> and <b>&#x2193;</b><br> to move</p>
+    </div>
+    <div id="instructions2">
+      <p style="flex:50%">First to score 5 points win</p>
+    </div>
+    
+    <div id="winner">Winner!</div>
+    <button id="restartBtn" onclick="location.reload()">Play Again</button>
+  </body>
+</html>
